@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+#intro {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#intro.visible {
+    display: flex;
+}
+
+#intro > .introPoster {
+    background-image: url("https://png.pngtree.com/background/20210710/original/pngtree-european-business-movie-poster-board-vector-background-material-picture-image_1006301.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    position: relative;
+}
+
+#intro > .caption {
+    top: 25%;
+    left: 50%;
+    color: #ffffff;
+    background-color: #2B4054;
+    position: absolute;
+    padding: 0.75rem 10rem 2.75rem;
+    font-size: 1.75rem;
+    white-space: nowrap;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    justify-items: center;
+
+    transform: translate(-50%, -50%);
+}
+
+#intro > .start {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#intro > .start > .button {
+    color: #eeeeee;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 1.5rem;
+
+    cursor: pointer;
+    border-radius: 0.35rem;
+    border: 0.125rem solid white;
+    box-shadow:  0.125rem 0.125rem 0.25rem #b4b4b4;
+    justify-content: center;
+
+    transition-duration: 500ms;
+    transition-property: background-color;
+    transition-timing-function: ease;
+}
+
+#intro > .start > .button:hover {
+    background-color: #4F6EAB;
+}
+
+#intro > .start > .button:active {
+    filter: brightness(90%);
+}
+
+#intro > .method-container {
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    z-index: 1;
+
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    transform: translateX(-50%);
+}
+
+#intro > .method-container > .label {
+    border: 0.125rem solid #eeeeee;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    padding: 1.2rem;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+#intro > .method-container > .label > .radio {
+    display: none;
+}
+
+#intro > .method-container > .label {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding: 1.2rem;
+
+    cursor: pointer;
+    border-radius: 0.35rem;
+    border: 0.125rem solid white;
+    box-shadow: 0.125rem 0.125rem 0.25rem #b4b4b4;
+    justify-content: center;
+
+    transition-duration: 500ms;
+    transition-property: background-color;
+    transition-timing-function: ease;
+}
+
+#intro > .method-container > .label:hover {
+    background-color: #7A67A3;
+}
+
+#intro > .method-container > .label:has(:checked) {
+    background-color: #7A67A3;
+    filter: brightness(90%);
+}

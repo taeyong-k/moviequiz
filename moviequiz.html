@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>영화 포스터 퀴즈</title>
+    <link rel="icon" href="./assets/images/logo.app.png">
+    <link rel="stylesheet" href="./assets/styles/common.css" type="text/css">
+    <link rel="stylesheet" href="./assets/styles/index.css" type="text/css">
+    <script defer src="./assets/scripts/moviequiz.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="visible" id="intro">
+    <div class="introPoster"></div>
+    <div class="caption">
+        <h1 class="title">영화 포스터 제목 퀴즈</h1>
+        <span class="explain">영화 포스터 부분을 보고 제목을 맞추세요.</span>
+    </div>
+    <div class="start">
+        <button class="button" type="button">시작하기</button>
+    </div>
+    <div class="method-container">
+        <label class="label">
+            <input class="radio" name="method" type="radio" value="10">
+            <span class="caption">&gt; 10개 풀기</span>
+        </label>
+        <label class="label">
+            <input class="radio" name="method" type="radio" value="20">
+            <span class="caption">&gt; 20개 풀기</span>
+        </label>
+        <label class="label">
+            <input class="radio" name="method" type="radio" value="30">
+            <span class="caption">&gt; 30개 풀기</span>
+        </label>
+    </div>
+
+</div>
+<div id="movieQuiz" class="visible">
+    <form class="quiz question visible">
+        <img alt="moviePoster" class="moviePoster" src="">
+        <label class="label">
+            <input class="input" name="keyword" placeholder="정답을 입력해주세요." spellcheck="false" type="text" minlength="1" maxlength="50">
+            <button class="button" type="button">&gt;</button>
+        </label>
+    </form>
+    <form class="quiz answer">
+        <img alt="moviePoster" class="moviePoster" src="">
+        <div class="caption">
+            <span class="result">정답!</span>
+            <span class="name">기생충</span>
+        </div>
+        <button class="button" type="button">&gt;</button>
+    </form>
+</div>
+
+<div id="footer" class="">
+    <img class="footerImg" alt="" src="https://kuku-keke.com/wp-content/uploads/2021/10/8794_6.png">
+    <div class="correct">
+        <span class="caption">
+            <span class="highlight">0개</span>
+            맞히셨습니다
+        </span>
+        <form class="button-container">
+            <button class="return" type="button">다시하기</button>
+            <button class="home" type="button">홈으로</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

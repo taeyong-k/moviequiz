@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+#movieQuiz {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+
+    align-items: stretch;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#movieQuiz.visible {
+    display: flex;
+}
+
+#movieQuiz > .quiz {
+    top: auto;
+    left: auto;
+    min-height: 44.25rem;
+    padding-top: 6rem;
+    padding-bottom: 9.3rem;
+    background-color: #3C3C8C;
+
+    align-items: center;
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+#movieQuiz > .quiz.question.visible {
+    display: flex;
+}
+
+#movieQuiz > .quiz.answer.visible {
+    display: flex;
+}
+
+#movieQuiz > .question > .moviePoster {
+    width: 35rem;
+    height: 23rem;
+    overflow: hidden;
+    object-fit: cover;
+    border: 0.125rem solid #dcdcdc;
+    box-shadow:  0 0 0.5rem #828282;
+}
+
+#movieQuiz > .question > .label {
+    margin-top: 3rem;
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-items: center;
+}
+
+#movieQuiz > .question > .label > .input {
+    width: 32.5rem;
+    height: 3.1rem;
+    background-color: #ffffff;
+    border: 0.125rem solid #0064FF;
+    border-radius: 0.35rem;
+    box-sizing: border-box;
+    font-size: initial;
+    color: inherit;
+    padding-left: 0.775rem;
+    outline: none;
+}
+
+#movieQuiz > .question > .label > .input:hover {
+    border: 0.125rem solid #4C9FFF;
+}
+
+#movieQuiz > .question > .label > .input:focus {
+    border: 0.125rem solid #99CCFF;
+}
+
+#movieQuiz > .question > .label > .button {
+    top: 0;
+    width: 3rem;
+    height: 3rem;
+    background-color: #5A5AFF;
+    border-radius: 0.35rem;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.125rem;
+    font-weight: 500;
+
+    transition-duration: 600ms;
+    transition-property: background-color;
+    transition-timing-function: ease;
+}
+
+#movieQuiz > .question > .label > .button:hover {
+    background-color: #3F3FDC;
+}
+
+#movieQuiz > .question > .label > .button:active {
+    filter: brightness(90%);
+}
+
+#movieQuiz > .answer > .moviePoster {
+    width: 35rem;
+    height: 40rem;
+    object-fit: cover;
+    border: 0.125rem solid #dcdcdc;
+    box-shadow:  0 0 0.5rem #828282;
+}
+
+#movieQuiz > .answer > .caption {
+    margin-top: 0.625rem;
+    color: #ffffff;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+#movieQuiz > .answer > .caption > .result {
+    font-size: 1.2rem;
+    font-weight: inherit;
+}
+
+#movieQuiz > .answer > .caption > .name {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#movieQuiz > .answer > .button {
+    margin-top: 1rem;
+
+    width: 3rem;
+    height: 3rem;
+    background-color: #5A5AFF;
+    border-radius: 0.35rem;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.125rem;
+    font-weight: 500;
+    padding: 0.9375rem;
+
+    transition-duration: 600ms;
+    transition-property: background-color;
+    transition-timing-function: ease;
+}
+
+#movieQuiz > .answer > .button:hover {
+    background-color: #3F3FDC;
+}
+
+#movieQuiz > .answer > .button:active {
+    filter: brightness(90%);
+}
