@@ -4,7 +4,7 @@ const $startButton = $intro.querySelector(':scope > .start > .button');
 const $methodRadios = $intro.querySelectorAll(':scope > .method-container > .label > .radio');
 let $quizCounter;
 
-// 게임시작 button : 옵션 선택 (기본값: 비활성화)
+// 게임시작 button : 옵션 선택 (기본값: 비활성화) 
 $startButton.disabled = true;
 
 $methodRadios.forEach($radio => {
