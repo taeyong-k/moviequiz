@@ -26,7 +26,7 @@ $startButton.onclick = () => {
         $input.focus();  // 포커스 설정
     }
 }
-
+ 
 
 // API
 const apiKey = 'YOUR_API_KEY_HERE';
